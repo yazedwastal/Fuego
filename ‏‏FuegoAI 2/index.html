@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon Link -->
+    <link rel="icon" href="img/logo.png">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Swiper Library Link -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Tailwind Css Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>AF | Home</title>
+</head>
+
+<body class="min-[1400px]:container mx-auto bg-[#0f172a] text-[#F5F5F5] font-medium" style="zoom: 0.8;">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=El+Messiri:wght@400..700&family=Grechen+Fuemen&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        .overflowH {
+            overflow: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        a {
+            transition-duration: 0.3s;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(59 130 246);
+        }
+
+        @media (max-width:768px) {
+            #ulist {
+                box-shadow: 4px 0px 22px -19px;
+            }
+        }
+    </style>
+
+    <!-- header -->
+    <header class="header w-full sticky left-0 top-0 bg-transparent backdrop-blur-lg flex justify-between items-center z-30
+max-lg:items-start pt-6 pb-3 pl-10 lg:pl-12 pr-6 
+max-lg:pr-0
+max-lg:pl-0
+max-lg:overflow-hidden
+">
+        <!-- navBar -->
+        <nav class="w-full flex max-lg:flex-col items-center">
+            <div class="
+       max-lg:flex 
+       max-lg:justify-between 
+       max-lg:items-center 
+       max-lg:w-full
+       max-lg:pr-6
+       max-lg:pl-10
+       ">
+                <div class="mr-[32px]">
+                    <img class="w-[60px] h-[40px] cursor-pointer " src="img/logo.png" alt="logo">
+                </div>
+                <button
+                    class="close-icon border-[#394259] hidden p-2 text-white hover:text-slate-400 active:text-slate-600 transition-colors border rounded-lg bg-slate-950/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                        data-slot="icon" class="w-6 h-6">
+                        <path fill-rule="evenodd"
+                            d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                            clip-rule="evenodd">
+                        </path>
+                    </svg>
+                </button>
+                <div class="menu-icon block lg:hidden">
+                    <button
+                        class="p-2 text-white border-[#394259] hover:text-slate-400 active:text-slate-600 transition-colors border rounded-lg bg-slate-950/20"><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            aria-hidden="true" data-slot="icon" class="w-6 h-6">
+                            <path fill-rule="evenodd"
+                                d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75H12a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                                clip-rule="evenodd">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="menu" class="nav-links max-lg:bg-[#0f172a] flex justify-between items-center w-full
+       max-lg:hidden
+       max-lg:absolute
+       max-lg:top-[80px]
+       max-lg:bg-transparent
+       max-lg:flex-col
+       max-lg:items-start
+       max-lg:pr-6
+       max-lg:pl-10
+       max-lg:mt-8
+       ">
+
+                <ul id="" class="flex gap-[48px] text-[20px] relative z-20 text-[#e7e7e7]
+           max-lg:flex-col
+           max-lg:gap-2
+           max-lg:w-full
+           max-lg:text-[16px]
+               ">
+                    <!-- <span id="close-btn"
+                   class="absolute top-3 right-3 cursor-pointer text-xl hidden max-lg:block">X</span> -->
+                    <a href="index.html" class="
+               max-lg:w-full
+               max-lg:bg-transparent
+               max-lg:border-[#FFFFFF33]
+               max-lg:border-2
+               max-lg:rounded-lg
+               max-lg:p-3  
+               duration-300">
+                        <li class="hover:text-[#80899f]">Home</li>
+                    </a>
+                    <a href="library.html" class="
+                    max-lg:w-full
+               max-lg:bg-transparent
+               max-lg:border-[#FFFFFF33]
+               max-lg:border-2
+               max-lg:rounded-lg
+               max-lg:p-3  
+               duration-300">
+                        <li class="hover:text-[#80899f]">Library</li>
+                    </a>
+                    <a href="fuegoAi.html" class="
+                    max-lg:w-full
+               max-lg:bg-transparent
+               max-lg:border-[#FFFFFF33]
+               max-lg:border-2
+               max-lg:rounded-lg
+               max-lg:p-3  
+               duration-300">
+                        <li class="hover:text-[#80899f]">FuegoAI</li>
+                    </a>
+
+                    <li class=" dropdown-button relative
+                    max-lg:w-full
+                    max-lg:bg-transparent
+                    max-lg:border-[#FFFFFF33]
+                    max-lg:border-2
+                    max-lg:rounded-lg
+                    max-lg:p-3  
+                    
+                    duration-300">
+                        <a id="resButton"
+                            class="dropdownBtn cursor-context-menu max-lg:cursor-pointer flex items-center max-lg:mt-[0px] max-lg:justify-between">
+                            Resources
+                            <img class="w-[9px] ml-2" src="img/arrow.png" alt="">
+                        </a>
+
+                        <div class="dropdown-menu
+                        absolute top-full left-0 origin-top-left
+                        invisible group-hover/dropdown:visible opacity-0 group-hover/dropdown:opacity-100 scale-95 group-hover/dropdown:scale-100 transition-all ease-in duration-100
+                        pt-1
+                      ">
+                            <div
+                                class="border border-slate-600  p-2 space-y-2 rounded-xl bg-slate-900/90  light:bg-slate-200/90 min-w-40">
+                                <a href="docs1.html" target="_blank"
+                                    class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                                    <div class="p-3 leading-4 space-y-1">
+                                        <div>Docs</div>
+                                        <div class="text-xs">Learn our products with AI search</div>
+                                    </div>
+                                </a>
+                                <a href="blog.html" target="_blank"
+                                    class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                                    <div class="p-3 leading-4 space-y-1">
+                                        <div>Blog</div>
+                                        <div class="text-xs">Learn trading, markets, and our tools</div>
+                                    </div>
+                                </a>
+                                <a href="affiliate.html"
+                                    class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                                    <div class="p-3 leading-4 space-y-1">
+                                        <div>Affiliates</div>
+                                        <div class="text-xs">Build an income sharing our tools</div>
+                                    </div>
+                                </a>
+                                <a href="affiliate.html#brandLogo"
+                                    class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                                    <div class="p-3 leading-4 space-y-1">
+                                        <div>Media Kit</div>
+                                        <!-- <div class="text-xs">What is LuxAlgo?</div> -->
+                                    </div>
+                                </a>
+                                <a href="policies.html" target="_blank"
+                                    class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                                    <div class="p-3 leading-4 space-y-1">
+                                        <div>Policies Page</div>
+                                        <!-- <div class="text-xs">Home of the smartest traders globally</div> -->
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </li>
+                    <a href="#pricing" class="dnone
+                    max-lg:w-full
+               max-lg:bg-transparent
+               max-lg:border-[#FFFFFF33]
+               max-lg:border-2
+               max-lg:rounded-lg
+               max-lg:p-3  
+               duration-300">
+                        <li class="hover:text-[#80899f]">Pricing</li>
+                    </a>
+                    <hr class="bg-[#FFFFFF33] w-full mb-2 hidden max-lg:block">
+                </ul>
+                <!-- button sign in -->
+                <button class="px-5 py-1.5 rounded-[100px] backdrop-blur-xl text-[16px] font-medium
+           relative z-10
+                max-lg:w-full
+                bg-[#3b82f6] 
+                border-[#3b82f6]
+                text-[#e7e7e7]
+                hover:bg-[#3b82f6b3]
+                hover:border-[#3b82f6b3]
+                border-2 duration-300">
+                    <a href="signup.html">Sign Up</a>
+                </button>
+            </div>
+
+            <!-- ===== Start Resourse PAge In Mobile ( < 1020) ===== -->
+            <div class="resoursePg max-lg:mt-8 w-full hidden top-[80px] pr-6 pl-10 max-lg:text-[16px]">
+                <div class="space-y-2">
+                    <div class="flex justify-between items-baseline gap-2">RESOURCES
+                        <button
+                            class="backBtn py-3 flex gap-1 leading-4 text-white hover:text-slate-400 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                aria-hidden="true" data-slot="icon" class="size-4">
+                                <path fill-rule="evenodd"
+                                    d="M9.78 4.22a.75.75 0 0 1 0 1.06L7.06 8l2.72 2.72a.75.75 0 1 1-1.06 1.06L5.47 8.53a.75.75 0 0 1 0-1.06l3.25-3.25a.75.75 0 0 1 1.06 0Z"
+                                    clip-rule="evenodd">
+                                </path>
+                            </svg>
+                            BACK
+                        </button>
+                    </div>
+                    <div>
+                        <div class="space-y-2">
+                            <a href="docs1.html"
+                                class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                                <div class="p-3 leading-4 space-y-1">
+                                    <div>Docs</div>
+                                    <div class="text-xs">Learn our products with AI search</div>
+                                </div>
+                            </a>
+                            <a href="blog.html"
+                                class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                                <div class="p-3 leading-4 space-y-1">
+                                    <div>Blog</div>
+                                    <div class="text-xs">Learn trading, markets, and our tools</div>
+                                </div>
+                            </a>
+                            <a href="affiliate.html"
+                                class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                                <div class="p-3 leading-4 space-y-1">
+                                    <div>Affiliates</div>
+                                    <div class="text-xs">Build an income sharing our tools</div>
+                                </div>
+                            </a>
+                            <a href="affiliate.html#brandLogo"
+                                class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                                <div class="p-3 leading-4 space-y-1">
+                                    <div>Media Kit</div>
+                                    <!-- <div class="text-xs">What is LuxAlgo?</div> -->
+                                </div>
+                            </a>
+                            <a href="policies.html"
+                                class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                                <div class="p-3 leading-4 space-y-1">
+                                    <div>Policies Page</div>
+                                    <!-- <div class="text-xs">Home of the smartest traders globally</div> -->
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ===== End Resourse PAge In Mobile ( < 1020) =====  -->
+        </nav>
+
+    </header>
+    <div class="mx-auto">
+        <div class="px-10">
+            <div class="min-[1400px]:container mx-auto">
+                <!-- hero -->
+                <section id="hero" class="section relative w-full flex justify-between items-center pt-[50px]">
+                    <div class="relative">
+                        <div class="relative">
+                            <h1 class="text-[48px] font-semibold max-sm:text-4xl">Find the best opportunities <br>
+                                in the finacial markets with <br>
+                                Fuego AI!
+                            </h1>
+                            <p class=" mt-5 mb-[48px] text-[#E7E7E7]">
+                                Real-time AI-driven signals, designed to help you navigate the <br> markets with
+                                precision.
+                            </p>
+
+                        </div>
+                        <button
+                            class="relative pt-2 pb-2 pr-6 pl-6 rounded-3xl hover:scale-x-105 duration-300 bg-[#3b82f6]">
+                            <a href="fuegoAi.html" class="text-[#E7E7E7] text-[16px]">
+                                Fuego AI
+                                <i class="fa-solid fa-arrow-right ml-[32px]"></i>
+                            </a>
+                        </button>
+                        <img class="absolute right-2 bottom-0 h-full" src="img/bg2.png" alt="">
+                    </div>
+                    <img class="absolute right-0 h-full max-md:hidden" src="img/bg.png" alt="">
+                    <div class="relative max-md:hidden">
+                        <img src="img/big-logo.png" alt="">
+                    </div>
+                </section>
+                <div class="fixed z-20 inset-0 pointer-events-none">
+                    <div class="min-[1400px]:container mx-auto relative h-full">
+
+                        <div class="absolute bottom-5 right-5 pointer-events-auto">
+                            <!-- Message Button -->
+                            <div id="btn-msg-btn" class="section w-[60px] h-[60px] rounded-[50%] border border-[#FFFFFF33]
+                                        bg-[#1b2335] m-auto cursor-pointer 
+                                         flex justify-center items-center hover:scale-[1.1] duration-300
+                                        ">
+                                <!-- Message Icon -->
+                                <a href="#">
+                                    <img class="w-[30px] h-[30px]  cursor-pointer" src="img/message-icon.png" alt="">
+                                </a>
+                                <!-- arrow Icon -->
+                            </div>
+                            <!-- Close Button (Arrow) -->
+
+                            <div id="btn-arrow-close" class="section hidden w-[60px] h-[60px] rounded-[50%] border border-[#FFFFFF33]
+                            bg-[#1b2335] m-auto cursor-pointer 
+                           justify-center items-center hover:scale-[1.1] duration-300
+                            ">
+                                <svg id="svg-arrow" class="rotate-[180deg] duration-300" width="30" height="30"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.601 8.39897C18.269 8.06702 17.7309 8.06702 17.3989 8.39897L12 13.7979L6.60099 8.39897C6.26904 8.06702 5.73086 8.06702 5.39891 8.39897C5.06696 8.73091 5.06696 9.2691 5.39891 9.60105L11.3989 15.601C11.7309 15.933 12.269 15.933 12.601 15.601L18.601 9.60105C18.9329 9.2691 18.9329 8.73091 18.601 8.39897Z"
+                                        fill="white">
+                                    </path>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixed z-30 inset-0 pointer-events-none">
+                    <div class="min-[1400px]:container mx-auto relative h-full">
+
+                        <div class="absolute bottom-5 right-5 pointer-events-auto">
+                            <!-- ==== All PopUp ==== -->
+                            <!-- ==== start Home Box Show ====  -->
+                            <style>
+                                .popupMsg {
+                                    box-shadow: 0px 1px 8px -6px;
+                                }
+                            </style>
+
+                            <div id="popup-msg" class="absolute hidden right-[-2500px] bottom-[22px] popupMsg w-[400px] h-fit duration-300 bg-[#0F172A]
+                    z-[2147483000] rounded-[20px]
+                            max-sm:bottom-[70px]
+               ">
+                                <div id="over-div" class="overflow-hidden">
+                                    <div
+                                        class="rounded-[20px] max-[1469px]:h-[88vh] max-[1469px]:min-h-[70vh] max-[1200px]:overflow-y-auto max-[1200px]:overflow-x-hidden">
+                                        <style>
+                                            .moon {
+                                                background-image: url(img/moon.png);
+                                                background-size: contain;
+                                                background-repeat: no-repeat;
+                                            }
+                                        </style>
+                                        <!-- section 1 -->
+                                        <div class="moon rounded-[20px]">
+                                            <div class="flex pt-[30px] pl-[30px]">
+                                                <img src="img/logo.png" alt="" class="w-[60px] h-[40px]">
+                                                <h1 class="text-[20px] font-semibold ml-2">AlgoFuego</h1>
+                                            </div>
+                                            <div class="px-[20px] mt-[92px] pb-[12px]">
+                                                <p class="text-[20px] text-[#E7E7E7]">How can we help you ?</p>
+                                                <button
+                                                    class="send-btn bg-[#3B82F6] text-[16px] text-[#E7E7E7] px-[12px] py-[16px] w-full text-start rounded-2xl mt-[12px] ">
+                                                    Ask a question
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- section 2 -->
+                                        <div class="w-full bg-[#0f172a] pt-[20px] rounded-ee-[16px] rounded-es-[16px]">
+                                            <!--  -->
+                                            <div
+                                                class="mb-[93px] mx-[20px] px-[18px] py-[20px] bg-[#1b2335] rounded-2xl flex flex-col gap-[40px]">
+                                                <div class="flex justify-between items-center cursor-pointer">
+                                                    <p class="text-[16px] text-[#E7E7E7]">Frequently Asked Questions</p>
+                                                    <img class="w-[20px] h-[20px]" src="img/share2.png"
+                                                        alt="share icon">
+                                                </div>
+                                                <div class="flex justify-between items-center cursor-pointer">
+                                                    <p class="text-[16px] text-[#E7E7E7]">Login / Mange Account</p>
+                                                    <img class="w-[20px] h-[20px]" src="img/share2.png"
+                                                        alt="share icon">
+                                                </div>
+                                                <div class="flex justify-between items-center cursor-pointer">
+                                                    <p class="text-[16px] text-[#E7E7E7]">Watch Video Tutorials</p>
+                                                    <img class="w-[20px] h-[20px]" src="img/share2.png"
+                                                        alt="share icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full flex justify-between items-center px-[80px] py-[26.5px] bg-[#1b2335]
+              rounded-ee-[16px] rounded-es-[16px]
+              ">
+                                    <div class="flex flex-col items-center justify-center gap-[5px] cursor-pointer">
+                                        <img class="w-[23px] h-[25px]" src="img/home2.png" alt="home icon">
+                                        <h3 class="text-[14px] text-[#3B82F6]">Home</h3>
+                                    </div>
+                                    <div id=""
+                                        class="mess-btn flex flex-col items-center justify-center gap-[5px] cursor-pointer">
+                                        <img class="w-[23px] h-[25px]" src="img/message2.png" alt="message icon">
+                                        <h3 class="text-[14px] text-[#FFFFFF]">Messages</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ==== End Home Box Show ====  -->
+
+                            <!-- ==== start Message Box Show ====  -->
+                            <div id="mess-popup" class="absolute hidden right-[-2500px] bottom-[22px] popupMsg w-[400px] h-fit duration-300 bg-[#0F172A] 
+                z-[2147483000] rounded-[20px]
+                max-sm:bottom-[70px]
+                
+                ">
+                                <div class="overflow-hidden">
+                                    <div
+                                        class="rounded-[20px] max-[1469px]:h-[90vh] max-[1200px]:h-[80vh] max-[1469px]:min-h-[70vh]  max-[1200px]:overflow-y-auto max-[1200px]:overflow-x-hidden">
+
+
+                                        <!-- section 1 -->
+                                        <div class="py-[15px] text-center border-b border-b-[#242B3D]">
+                                            <h3 class="text-[20px] text-[#FFFFFF]">Message</h3>
+                                        </div>
+                                        <div
+                                            class="pt-[180.5px] pb-[87.5px] pl-[55px] pr-[54px] flex flex-col justify-center items-center text-center">
+                                            <img class="w-[50px] h-[50px]" src="img/message2.png" alt="">
+                                            <h4 class="text-[16px] text-[#E7E7E7] py-[10px]">No Messages</h4>
+                                            <p class="text-[16px] text-[#E7E7E7]">Messages from team will show here</p>
+                                        </div>
+                                        <div class="flex justify-center items-center mb-[40px]">
+                                            <button id="" class="send-btn text-[16px] text-[#E7E7E7] px-[32px] py-[12px]
+                         cursor-pointer border border-[#494F5D] rounded-[50px] bg-[#1B2335]">Send Message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- section 2 -->
+                                <div class="w-full bg-[#0f172a] pt-[20px] rounded-ee-[16px] rounded-es-[16px]">
+                                    <!--  -->
+
+                                    <div class="w-full flex justify-between items-center px-[80px] py-[26.5px] bg-[#1b2335]
+                    rounded-ee-[16px] rounded-es-[16px]
+                    ">
+                                        <div id="home-popup"
+                                            class="flex flex-col items-center justify-center gap-[5px] cursor-pointer">
+                                            <img class="w-[23px] h-[25px]" src="img/home-white.png" alt="home icon">
+                                            <h3 class="text-[14px] text-[#FFFFFF]">Home</h3>
+                                        </div>
+                                        <div class="flex flex-col items-center justify-center gap-[5px] cursor-pointer">
+                                            <img class="w-[23px] h-[25px]" src="img/message-blue.png"
+                                                alt="message icon">
+                                            <h3 class="text-[14px] text-[#3B82F6]">Messages</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ==== End Message Box Show ====  -->
+
+                            <!-- ==== start chat Message Box Show ====  -->
+                            <div id="chat-mess" class="absolute hidden right-[-2500px] bottom-[22px] popupMsg w-[400px] h-fit duration-300 bg-[#0F172A] 
+                 z-[2147483000] rounded-[20px]
+                 max-sm:bottom-[70px]
+                 
+                ">
+                                <div class="overflow-hidden">
+                                    <div
+                                        class="rounded-[20px] max-[1469px]:h-[90vh] max-[1200px]:h-[80vh] max-[1469px]:min-h-[70vh] overflow-y-auto overflow-x-hidden">
+
+                                        <!-- section 1 -->
+                                        <div
+                                            class="py-[19px] flex justify-start items-center pl-[32px] border-b border-b-[#242B3D] pt-[30px]">
+                                            <img id="arrow-prev" class="w-[11px] h-[20px] mr-[10px] cursor-pointer"
+                                                src="img/arrow-left2.png" alt="arrow left">
+                                            <div class="flex ">
+                                                <img src="img/logo.png" alt="" class="w-[32.54] h-[20px]">
+                                                <h1 class="text-[16px] font-semibold ml-2">AlgoFuego</h1>
+                                            </div>
+                                        </div>
+
+                                        <div class="px-[20px]">
+                                            <div
+                                                class="mb-[10px] mt-[45px] rounded-[20px] px-[32px] py-[20px] bg-[#141C2E]">
+                                                <div class="flex justify-center items-center w-fit">
+                                                    <img class="w-[30px] h-[30px] mr-[10px]" src="img/person-icon.png"
+                                                        alt="person-icon">
+                                                    <h4 class="text-[16px] text-[#E7E7E7]">Fuego Agent</h4>
+                                                </div>
+                                                <p class="text-[16px] text-[#E7E7E7] mt-[10px]">
+                                                    Hi there! This is a bot speaking. I’m here to answer your questions,
+                                                    but
+                                                    you’ll
+                                                    always
+                                                    have the option to talk to our team.
+                                                </p>
+                                            </div>
+
+                                            <div class="mt-[145px]">
+                                                <form action="">
+                                                    <div class="rounded-[20px] border border-[#494F5D] bg-[#141C2E]">
+                                                        
+                                                        <input type="email" class="text-[16px] text-[#E7E7E7] px-[9px] pt-[20px] pb-[16px] 
+                                                         border-b border-[#494F5D] bg-transparent w-full outline-none"
+                                                        required placeholder="email@example.com"
+                                                        >
+                                                        <input type="text" class="text-[16px] text-[#E7E7E7] px-[9px] pt-[20px] pb-[16px] outline-none
+                                                        bg-transparent w-full" required placeholder=" Ask a question ...."
+                                                        >
+                                                    </div>
+                                                   
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex justify-center items-center mt-[48px] mb-[32px]">
+                                        <button type="submit"
+                                        class="text-[20px] text-white rounded-[100px] text-center px-[32px] py-[12px] cursor-pointer bg-[#3B82F6]">
+                                        Send
+                                    </button>
+                                </div>
+                            </form>
+                            </div>
+                            <!-- ==== End chat Message Box Show ====  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto">
+        <div class="px-10">
+            <div class="section min-[1400px]:container mx-auto">
+                <!-- section 2 -->
+
+
+
+                <div class="w-full my-[150px] flex gap-[32px] justify-between
+                            max-lg:flex-wrap
+                            items-start
+                            ">
+                    <div class="h-[378px] w-[50%] max-lg:w-full">
+                        <img id="slideImage" class="rounded-[20px] w-full h-[378px]
+                        opacity-100 transition-opacity duration-1000 ease-in-out
+                        " src="img/New Microsoft PowerPoint Presentation.png" alt="new microsoft">
+                    </div>
+                    <div class="flex flex-col justify-between max-md:w-full">
+                        <h2 class="text-[48px] font-semibold max-sm:text-4xl">
+                            Indicators & Strategies <br> For Tradingview <br> Traders
+                        </h2>
+                        <p class="max-md:mt-2 mb-[48px] mt-[20px] max-md:mb-8 text-[#E7E7E7]">
+                            50+ premium indicators, Tutorials, mentorship and more - <br> All-in-one toolbox
+                        </p>
+                        <div class="flex max-[430px]:justify-between">
+                            <button class="relative pt-2 pb-2 pr-6 pl-6 rounded-[50px] hover:scale-x-105 duration-300 bg-[#3b82f6] mr-[10px]
+                    
+                    max-sm:mr-[7px]
+                        ">
+                                <a href="library.html" class="text-[16px] text-[#E7E7E7]">
+                                    Explore the library
+                                    <i class="fa-solid fa-arrow-right w-[16px] h-[10.06px] ml-1 max-sm:ml-1"></i>
+                                </a>
+                            </button>
+                            <button class="relative pt-2 pb-2 pr-6 pl-6 hover:scale-x-105 duration-300
+                    rounded-[50px] backdrop-blur-xl 
+                  bg-[#1b2335] border-[#FFFFFF33] border-2
+                  
+                    ">
+                                <a href="#pricing" class="text-[16px] text-[#E7E7E7]">
+                                    Try 30 Days Free
+                                    <i class="fa-solid fa-arrow-right w-[16px] h-[10.06px] ml-1 max-sm:ml-1"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- section 3 swiper -->
+                <div class="swiper section  my-[150px]">
+
+                    <style>
+                        .swiper-pagination-bullet-active {
+                            background: #3b82f6;
+                            color: white;
+                            height: auto;
+                        }
+                    </style>
+                    <div class="slider-wrapper2" id="slide">
+                        <div
+                            class="swiper-pagination max-lg:flex-wrap max-lg:gap-y-[10px] max-lg:flex-col flex justify-between [position:unset] pb-2 border-b border-[#878b94]">
+                        </div>
+                        <div id="swiperCard" class="swiper-wrapper all-answer">
+                            <!-- one -->
+                            <div class="swiper-slide section2 w-full my-[4.5rem] flex gap-[32px] justify-around
+                    max-lg:flex-wrap
+                    items-center
+                ">
+
+                                <div class="flex flex-col max-md:w-full h-[349px] w-[614px]">
+                                    <h2 class="text-[48px] font-semibold max-sm:text-4xl">
+                                        Most <br> Viewed
+                                    </h2>
+                                    <p class="max-md:mt-2 mb-[48px] mt-[40px] max-md:mb-8 text-[#E7E7E7]">
+                                        An advanced indicator built on W.D. Gann’s original rules, enhanced by Mr.
+                                        Jaradat’s innovative mechanical <br> trend-following methods.
+                                    </p>
+                                    <div class="flex ml-[5px]">
+                                        <button class="relative z-30 pt-2 pb-2 pr-6 pl-6 rounded-[50px] hover:scale-x-105 duration-300 bg-[#3b82f6] mr-[10px]
+                
+                max-sm:mr-[7px]
+                    ">
+                                            <a href="#" class="text-[16px] text-[#E7E7E7]">
+                                                Learn More
+                                                <i
+                                                    class="fa-solid fa-arrow-right w-[16px] h-[10.06px] ml-[32px] max-sm:ml-1"></i>
+                                            </a>
+                                        </button>
+                                        <button class="relative z-30 pt-2 pb-2 pr-6 pl-6 hover:scale-x-105 duration-300
+                rounded-[50px] backdrop-blur-xl 
+              bg-[#1b2335] border-[#FFFFFF33] border-2
+              
+                ">
+                                            <a href="#pricing" class="text-[16px] text-[#E7E7E7]">
+                                                Unlock Access
+                                                <i
+                                                    class="fa-solid fa-arrow-right w-[16px] h-[10.06px] ml-[32px] max-sm:ml-1"></i>
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                                <style>
+                                    .image-container {
+                                        /* overflow: hidden; */
+                                        position: relative;
+                                    }
+
+                                    .image-container img {
+                                        position: absolute;
+                                        width: 100%;
+                                        opacity: 0;
+                                        transition: opacity 1s ease;
+                                    }
+
+                                    .image-container img.active {
+                                        opacity: 1;
+                                    }
+                                </style>
+                                <div class="image-container h-[349px] w-[50%] max-lg:w-full rounded-[20px]">
+                                    <img class="img active rounded-[20px] w-full h-[349px]
+                                    
+                                    " src="img/most.jpg" alt="new microsoft">
+                                    <img class="img rounded-[20px] w-full h-[349px]
+                                    
+                                    " src="img/New Microsoft.png" alt="new microsoft">
+
+
+                                    <img class="img rounded-[20px] w-full h-[349px]
+                                    
+                                    " src="img/trend.jpg" alt="new microsoft">
+
+                                </div>
+                            </div>
+                            <!-- two -->
+                            <div class="swiper-slide section2 w-full my-[4.5rem] flex gap-[32px] justify-around
+                    max-lg:flex-wrap
+                    items-center
+                ">
+
+                                <div class="flex flex-col max-md:w-full h-[349px] w-[614px]">
+                                    <h2 class="text-[48px] font-semibold max-sm:text-4xl">
+                                        Original Gann Swing <br> Chart Rules
+                                    </h2>
+                                    <p class="max-md:mt-2 mb-[48px] mt-[40px] max-md:mb-8 text-[#E7E7E7]">
+                                        An advanced indicator built on W.D. Gann’s original rules, enhanced by Mr.
+                                        Jaradat’s innovative mechanical <br> trend-following methods.
+                                    </p>
+                                    <div class="flex ml-[5px]">
+                                        <button class="relative z-30 pt-2 pb-2 pr-6 pl-6 rounded-[50px] hover:scale-x-105 duration-300 bg-[#3b82f6] mr-[10px]
+                                
+                                max-sm:mr-[7px]
+                                    ">
+                                            <a href="#" class="text-[16px] text-[#E7E7E7]">
+                                                Learn More
+                                                <i
+                                                    class="fa-solid fa-arrow-right w-[16px] h-[10.06px] ml-[32px] max-sm:ml-1"></i>
+                                            </a>
+                                        </button>
+                                        <button class="relative z-30 pt-2 pb-2 pr-6 pl-6 hover:scale-x-105 duration-300
+                                rounded-[50px] backdrop-blur-xl 
+                              bg-[#1b2335] border-[#FFFFFF33] border-2
+                              
+                                ">
+                                            <a href="#pricing" class="text-[16px] text-[#E7E7E7]">
+                                                Unlock Access
+                                                <i
+                                                    class="fa-solid fa-arrow-right w-[16px] h-[10.06px] ml-[32px] max-sm:ml-1"></i>
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="image-container h-[349px] w-[50%] max-lg:w-full rounded-[20px]">
+                                    <img class="rounded-[20px] w-full h-[349px]
+                                    
+                                    " src="img/New Microsoft.png" alt="new microsoft">
+                                    <img class="active rounded-[20px] w-full h-[349px]
+                                    
+                                    " src="img/most.jpg" alt="new microsoft">
+
+
+                                    <img class="rounded-[20px] w-full h-[349px]
+                                    
+                                    " src="img/trend.jpg" alt="new microsoft">
+
+                                </div>
+                            </div>
+                            <!-- three -->
+                            <div class="swiper-slide section2 w-full my-[4.5rem] flex gap-[32px] justify-around
+                    max-lg:flex-wrap
+                    items-center
+                ">
+
+                                <div class="flex flex-col max-md:w-full h-[349px] w-[614px]">
+                                    <h2 class="text-[48px] font-semibold max-sm:text-4xl">
+                                        Turtle Trading <br> System
+                                    </h2>
+                                    <p class="max-md:mt-2 mb-[48px] mt-[40px] max-md:mb-8 text-[#E7E7E7]">
+                                        An advanced indicator built on W.D. Gann’s original rules, enhanced by Mr.
+                                        Jaradat’s innovative mechanical <br> trend-following methods.
+                                    </p>
+                                    <div class="flex ml-[5px]">
+                                        <button class="relative z-30 pt-2 pb-2 pr-6 pl-6 rounded-[50px] hover:scale-x-105 duration-300 bg-[#3b82f6] mr-[10px]
+                                
+                                max-sm:mr-[7px]
+                                    ">
+                                            <a href="#" class="text-[16px] text-[#E7E7E7]">
+                                                Learn More
+                                                <i
+                                                    class="fa-solid fa-arrow-right w-[16px] h-[10.06px] ml-[32px] max-sm:ml-1"></i>
+                                            </a>
+                                        </button>
+                                        <button class="relative z-30 pt-2 pb-2 pr-6 pl-6 hover:scale-x-105 duration-300
+                                rounded-[50px] backdrop-blur-xl 
+                              bg-[#1b2335] border-[#FFFFFF33] border-2
+                              
+                                ">
+                                            <a href="#pricing" class="text-[16px] text-[#E7E7E7]">
+                                                Unlock Access
+                                                <i
+                                                    class="fa-solid fa-arrow-right w-[16px] h-[10.06px] ml-[32px] max-sm:ml-1"></i>
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="image-container h-[349px] w-[50%] max-lg:w-full rounded-[20px]">
+                                    <img class="rounded-[20px] w-full h-[349px]
+                                    
+                                    " src="img/trend.jpg" alt="new microsoft">
+                                    <img class="active rounded-[20px] w-full h-[349px]
+                                    
+                                    " src="img/most.jpg" alt="new microsoft">
+                                    <img class="rounded-[20px] w-full h-[349px]
+                                    
+                                    " src="img/New Microsoft.png" alt="new microsoft">
+                                </div>
+                            </div>
+                            <!-- four -->
+                            <div class="swiper-slide section2 w-full my-[4.5rem] flex gap-[32px] justify-around
+                    max-lg:flex-wrap
+                    items-center
+                ">
+
+                                <div class="flex flex-col max-md:w-full h-[349px] w-[614px]">
+                                    <h2 class="text-[48px] font-semibold max-sm:text-4xl">
+                                        Historical <br> Seasonality
+                                    </h2>
+                                    <p class="max-md:mt-2 mb-[48px] mt-[40px] max-md:mb-8 text-[#E7E7E7]">
+                                        An advanced indicator built on W.D. Gann’s original rules, enhanced by Mr.
+                                        Jaradat’s innovative mechanical <br> trend-following methods.
+                                    </p>
+                                    <div class="flex ml-[5px]">
+                                        <button class="relative z-30 pt-2 pb-2 pr-6 pl-6 rounded-[50px] hover:scale-x-105 duration-300 bg-[#3b82f6] mr-[10px]
+                                
+                                max-sm:mr-[7px]
+                                    ">
+                                            <a href="#" class="text-[16px] text-[#E7E7E7]">
+                                                Learn More
+                                                <i
+                                                    class="fa-solid fa-arrow-right w-[16px] h-[10.06px] ml-[32px] max-sm:ml-1"></i>
+                                            </a>
+                                        </button>
+                                        <button class="relative z-30 pt-2 pb-2 pr-6 pl-6 hover:scale-x-105 duration-300
+                                rounded-[50px] backdrop-blur-xl 
+                              bg-[#1b2335] border-[#FFFFFF33] border-2
+                              
+                                ">
+                                            <a href="#pricing" class="text-[16px] text-[#E7E7E7]">
+                                                Unlock Access
+                                                <i
+                                                    class="fa-solid fa-arrow-right w-[16px] h-[10.06px] ml-[32px] max-sm:ml-1"></i>
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="image-container h-[349px] w-[50%] max-lg:w-full rounded-[20px]">
+                                    <img class="rounded-[20px] w-full h-[349px]
+                                    
+                                    " src="img/hol.jpg" alt="new microsoft">
+                                    <img class="active rounded-[20px] w-full h-[349px]
+                                    
+                                    " src="img/most.jpg" alt="new microsoft">
+                                    <img class="rounded-[20px] w-full h-[349px]
+                                    
+                                    " src="img/New Microsoft.png" alt="new microsoft">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="section w-full relative text-center my-[150px]">
+                    <button class="relative pt-2 pb-2 pr-6 pl-6 hover:scale-x-105 duration-300
+        rounded-3xl backdrop-blur-xl  mb-[40px]
+     bg-transparent border-[#FFFFFF33] border-2
+       ">
+                        <a href="#" class="flex items-center text-[#E7E7E7] text-[16px]">
+                            Let's build
+                            <img src="img/build.png" class="ml-[32px] w-[18px] h-[20px]" />
+                        </a>
+                    </button>
+                    <div class="w-full flex justify-center items-center gap-[48px]">
+                        <img class="w-[200px] h-[150px] max-[900px]:hidden"
+                            src="img/New Microsoft PowerPoint Presentation.png" alt="new microsoft">
+                        <div>
+                            <h2 class="text-center text-[48px] font-semibold max-sm:text-4xl">Focus on your ideas <br>
+                                and Leave the
+                                <br>
+                                coding
+                                to us
+                            </h2>
+                            <p class="text-center mt-[20px] text-[#E7E7E7] leading-[28px]">Our developers and industry
+                                experts
+                                are ready to <br> turn your trading
+                                ideas into reality.</p>
+                        </div>
+                        <img class="w-[200px] h-[150px] max-[900px]:hidden"
+                            src="img/New Microsoft PowerPoint Presentation.png" alt="new microsoft">
+                    </div>
+
+                    <button
+                        class="relative z-10 mt-[40px] pt-2 pb-2 pr-6 pl-6 rounded-3xl hover:scale-x-105 duration-300 bg-[#3b82f6]">
+                        <a href="about.html" class="text-[#E7E7E7] text-[16px]">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right ml-[32px]"></i>
+                        </a>
+                    </button>
+
+                    <img class="absolute top-[-145px] left-[200px] h-[230px] max-md:left-0 max-lg:left-[100px]"
+                        src="img/bg2.png" alt="">
+                    <img class="absolute top-[-145px] right-[300px] h-[230px] max-md:right-[100px] max-sm:right-0 max-lg:right-[100px]"
+                        src="img/bg2.png" alt="">
+                    <img class="absolute bottom-[-65px] right-[300px] h-auto max-md:right-0 max-lg:right-[100px]"
+                        src="img/bg2.png" alt="">
+                </div>
+                <!-- Section 5 -->
+                <div class="section w-full my-[150px]">
+
+                    <div class="flex flex-col justify-center items-center gap-[20px]">
+                        <button class="relative pt-2 pb-2 pr-6 pl-6 hover:scale-x-105 duration-300
+                        rounded-3xl backdrop-blur-xl mb-[20px]
+                    bg-transparent border-[#FFFFFF33] border-2
+                    ">
+                            <a href="#" class="flex items-center text-[16px] text-[#E7E7E7]">
+                                Get It All in One Platform
+                                <img src="img/card.png" class="ml-[32px] w-[19.56px] h-[19.56px]">
+                            </a>
+                        </button>
+                        <h2 class="text-center text-[48px] font-semibold max-sm:text-4xl">Save unlimited with <br> one
+                            subscription</h2>
+                        <p class="text-center mb-[48px] mt-[20px] leading-[28px]">Try Algo Fuego Elite 30-Day RISK-FREE
+                            !
+                            <br> Get a Full Refund If You’re Not Satisfied !
+                        </p>
+
+                    </div>
+                    <div id="pricing" class="w-full overflow-x-auto">
+                        <div class="section min-w-[64rem] flex justify-center gap-[20px] mt-[20px] mb-2">
+                            <!-- card -->
+                            <div class="section card w-[398.67px] h-fit border-[1px] rounded-[20px] border-[#FFFFFF33]">
+                                <!--  -->
+                                <div class="mb-5 p-[32px]">
+                                    <div class="flex items-center">
+                                        <img class="mr-3 w-[56px] h-[56px]" src="img/mojawarat.png" alt="feda">
+                                        <h3 class="font-semibold text-[32px] text-[#FFFFFF]">Monthly</h3>
+                                    </div>
+                                    <div class="text-center w-full flex justify-center my-[32px]">
+                                        <h2
+                                            class="w-fit relative font-semibold text-[64px] text-white max-sm:text-[48px]">
+                                            <sup
+                                                class="text-[24px] font-semibold absolute top-[23px] left-[-18px]">$</sup>
+                                            39.99 <sub
+                                                class="text-[24px] font-semibold absolute bottom-[25px] right-[-40px]">\m</sub>
+                                        </h2>
+                                    </div>
+                                    <p class="text-center text-[#E7E7E7]">Perfect for getting started</p>
+                                </div>
+                                <div class="p-[32px] bg-[#1b2335] rounded-[20px]">
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">50+ Advanced Indicators</p>
+                                    </div>
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">Full Access to All Articles</p>
+                                    </div>
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">Lifetime Future Updates</p>
+                                    </div>
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">50% Off Custom Programming Services</p>
+                                    </div>
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">Unlimited Access to AI-Powered Signals</p>
+                                    </div>
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">VIP Customer Support</p>
+                                    </div>
+                                    <div class="flex items-start mb-[32px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">Exclusive Gift from Algo Fuego</p>
+                                    </div>
+                                    <div class="w-full flex justify-center">
+                                        <button class="relative pt-2 pb-2 pr-5 pl-5 hover:scale-x-105 duration-300
+                        rounded-[50px] backdrop-blur-xl 
+                     bg-[#1b2335] border-[#FFFFFF33] border-2
+                       ">
+                                            <a href="signup.html" class="text-[#E7E7E7] text-[16px]">
+                                                Subscribe
+                                                <i class="fa-solid fa-arrow-right ml-[32px] w-[16px] h-[10.06px]"></i>
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="section card w-[398.67px] h-fit border-[1px] rounded-[20px] border-[#FFFFFF33]">
+                                <!--  -->
+                                <div class="mb-5 p-[32px]">
+                                    <div class="flex items-center">
+                                        <img class="mr-3 w-[56px] h-[56px]" src="img/mojawarat.png" alt="feda">
+                                        <h3 class="font-semibold text-[32px] text-[#FFFFFF]">Quarterly</h3>
+                                    </div>
+                                    <div class="text-center w-full flex justify-center my-[32px]">
+                                        <h2
+                                            class="w-fit relative font-semibold text-[64px] text-white max-sm:text-[48px]">
+                                            <sup
+                                                class="text-[24px] font-semibold absolute top-[23px] left-[-18px]">$</sup>
+                                            29.99 <sub
+                                                class="text-[24px] font-semibold absolute bottom-[25px] right-[-40px]">\m</sub>
+                                        </h2>
+                                    </div>
+                                    <p class="text-[#70AFF7]">SAVE 25%</p>
+                                </div>
+                                <div class="p-[32px] bg-[#1b2335] rounded-[20px]">
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">50+ Advanced Indicators</p>
+                                    </div>
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">Full Access to All Articles</p>
+                                    </div>
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">Lifetime Future Updates</p>
+                                    </div>
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">50% Off Custom Programming Services</p>
+                                    </div>
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">Unlimited Access to AI-Powered Signals</p>
+                                    </div>
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">VIP Customer Support</p>
+                                    </div>
+                                    <div class="flex items-start mb-[32px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">Exclusive Gift from Algo Fuego</p>
+                                    </div>
+                                    <div class="w-full flex justify-center">
+                                        <button class="relative pt-2 pb-2 pr-5 pl-5 hover:scale-x-105 duration-300
+                        rounded-[50px] backdrop-blur-xl 
+                     bg-[#1b2335] border-[#FFFFFF33] border-2
+                       ">
+                                            <a href="signup.html" class="text-[#E7E7E7] text-[16px]">
+                                                Subscribe
+                                                <i class="fa-solid fa-arrow-right ml-[32px] w-[16px] h-[10.06px]"></i>
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="section card w-[398.67px] h-fit border-[1px] rounded-[20px] border-[#FFFFFF33]">
+                                <!--  -->
+                                <div class="mb-5 p-[32px]">
+                                    <div class="flex items-center">
+                                        <img class="mr-3 w-[56px] h-[56px]" src="img/mojawarat.png" alt="feda">
+                                        <h3 class="font-semibold text-[32px] text-[#FFFFFF]">Yearly</h3>
+                                    </div>
+                                    <div class="text-center w-full flex justify-center my-[32px]">
+                                        <h2
+                                            class="w-fit relative font-semibold text-[64px] text-white max-sm:text-[48px]">
+                                            <sup
+                                                class="text-[24px] font-semibold absolute top-[23px] left-[-18px]">$</sup>
+                                            19.99 <sub
+                                                class="text-[24px] font-semibold absolute bottom-[25px] right-[-40px]">\m</sub>
+                                        </h2>
+                                    </div>
+                                    <p class="text-[#70AFF7]">SAVE 50%</p>
+                                </div>
+                                <div class="p-[32px] bg-[#1b2335] rounded-[20px]">
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">50+ Advanced Indicators</p>
+                                    </div>
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">Full Access to All Articles</p>
+                                    </div>
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">Lifetime Future Updates</p>
+                                    </div>
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">50% Off Custom Programming Services</p>
+                                    </div>
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">Unlimited Access to AI-Powered Signals</p>
+                                    </div>
+                                    <div class="flex items-start mb-[20px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">VIP Customer Support</p>
+                                    </div>
+                                    <div class="flex items-start mb-[32px]">
+                                        <img class="w-[20px] mr-2" src="img/true.png" alt="true icon">
+                                        <p class="text-white">Exclusive Gift from Algo Fuego</p>
+                                    </div>
+                                    <div class="w-full flex justify-center">
+                                        <button class="relative pt-2 pb-2 pr-5 pl-5 hover:scale-x-105 duration-300
+                        rounded-[50px] backdrop-blur-xl 
+                     bg-[#1b2335] border-[#FFFFFF33] border-2
+                       ">
+                                            <a href="signup.html" class="text-[#E7E7E7] text-[16px]">
+                                                Subscribe
+                                                <i class="fa-solid fa-arrow-right ml-[32px] w-[16px] h-[10.06px]"></i>
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section 6 -->
+                <div class="section w-full my-[150px]">
+                    <div class="flex flex-col justify-center items-center gap-[20px] mt-[20px] mb-[48px]">
+                        <button class="relative pt-2 pb-2 pr-6 pl-6 hover:scale-x-105 duration-300
+                        rounded-[50px] backdrop-blur-xl 
+                    bg-transparent border-[#FFFFFF33] border-2
+                    ">
+                            <a href="#" class="flex items-center text-[#E7E7E7] text-[16px]">
+                                Spotlight
+                                <img src="img/lampa.png" alt="lampa icon" class="ml-[32px] w-[12px] h-[18px]">
+                            </a>
+                        </button>
+                        <h2 class="text-center text-[48px] font-semibold max-sm:text-4xl">What traders say <br> about us
+                        </h2>
+                        <p class="text-center mt-[20px] text-[#E7E7E7]">Every word means a story to us</p>
+                    </div>
+                    <!-- swiper -->
+                    <div class="swiper section">
+                        <div class="slider-wrapper">
+                            <div class="swiper-wrapper all-card">
+                                <!-- one Card cader -->
+                                <!-- card -->
+                                <div
+                                    class="swiper-slide w-[512.3px] p-5 rounded-[16px] border-[1px] border-[#FFFFFF33]">
+                                    <div class="flex items-center">
+                                        <img class="mr-2 w-[30px] h-[30px]" src="img/person.png" alt="">
+                                        <h3 class="text-[#E7E7E7]">John's </h3>
+                                    </div>
+                                    <div class="flex my-[20px]">
+                                        <img class="w-[19.47] h-[16px] mr-3" src="img/zohal.png" alt="like">
+                                        <img class="w-[19.47] h-[16px] mr-3" src="img/zohal.png" alt="like">
+                                        <img class="w-[19.47] h-[16px] mr-3" src="img/zohal.png" alt="like">
+                                        <img class="w-[19.47] h-[16px]" src="img/zohal.png" alt="like">
+                                    </div>
+                                    <p class="font-medium text-[#E7E7E7] leading-[28px]">
+                                        I had been searching for a AI platform that combines cutting-edge technology
+                                        with
+                                        ease
+                                        of use, and I found exactly what I needed in AlgoFuego. The smart signals and
+                                        advanced
+                                        indicators empower me to make my trading decisions with confidence. It feels
+                                        like
+                                        I’m
+                                        receiving genuine advice from a friend who truly cares abot my success.
+                                    </p>
+                                </div>
+
+                                <!-- card -->
+                                <div
+                                    class="swiper-slide w-[512.3px] p-5 rounded-[16px] border-[1px] border-[#FFFFFF33]">
+                                    <div class="flex items-center">
+                                        <img class="mr-2 w-[30px] h-[30px]" src="img/person.png" alt="">
+                                        <h3 class="text-[#E7E7E7]">Emily's</h3>
+                                    </div>
+                                    <div class="flex my-[20px]">
+                                        <img class="w-[19.47] h-[16px] mr-3" src="img/zohal.png" alt="like">
+                                        <img class="w-[19.47] h-[16px] mr-3" src="img/zohal.png" alt="like">
+                                        <img class="w-[19.47] h-[16px] mr-3" src="img/zohal.png" alt="like">
+                                        <img class="w-[19.47] h-[16px]" src="img/zohal.png" alt="like">
+                                    </div>
+                                    <p class="font-medium text-[#E7E7E7] leading-[28px]">
+                                        I had been searching for a AI platform that combines cutting-edge technology
+                                        with
+                                        ease
+                                        of use, and I found exactly what I needed in AlgoFuego. The smart signals and
+                                        advanced
+                                        indicators empower me to make my trading decisions with confidence. It feels
+                                        like
+                                        I’m
+                                        receiving genuine advice from a friend who truly cares abot my success.
+                                    </p>
+                                </div>
+                                <!-- card -->
+                                <div
+                                    class="swiper-slide w-[512.3px] p-5 rounded-[16px] border-[1px] border-[#FFFFFF33]">
+                                    <div class="flex items-center">
+                                        <img class="mr-2 w-[30px] h-[30px]" src="img/person.png" alt="">
+                                        <h3 class="text-[#E7E7E7]">Emily's</h3>
+                                    </div>
+                                    <div class="flex my-[20px]">
+                                        <img class="w-[19.47] h-[16px] mr-3" src="img/zohal.png" alt="like">
+                                        <img class="w-[19.47] h-[16px] mr-3" src="img/zohal.png" alt="like">
+                                        <img class="w-[19.47] h-[16px] mr-3" src="img/zohal.png" alt="like">
+                                        <img class="w-[19.47] h-[16px]" src="img/zohal.png" alt="like">
+                                    </div>
+                                    <p class="font-medium text-[#E7E7E7] leading-[28px]">
+                                        I had been searching for a AI platform that combines cutting-edge technology
+                                        with
+                                        ease
+                                        of use, and I found exactly what I needed in AlgoFuego. The smart signals and
+                                        advanced
+                                        indicators empower me to make my trading decisions with confidence. It feels
+                                        like
+                                        I’m
+                                        receiving genuine advice from a friend who truly cares abot my success.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Section 7 -->
+
+                <div class="section w-full my-[150px]">
+                    <!-- <img src="img/arrow-down.png" alt=""> -->
+                    <h2 class="text-[48px] font-semibold mb-[48px] max-sm:text-4xl">Frequently Asked Questions</h2>
+
+                    <div class="flex gap-8 max-md:flex-wrap">
+                        <div class="w-full">
+                            <div class="one-accordion p-[20px] rounded-xl mb-[20px] bg-[#1b2335]">
+                                <div class="accordion cursor-pointer w-full flex items-center justify-between">
+                                    <button class="text-start text-[#E7E7E7]">What is Algo Fuego ?</button>
+                                    <img class="w-[15px] h-[8px]" src="img/arrow-down.png" alt="">
+                                </div>
+                                <div class="desc max-h-0 overflow-hidden duration-300">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="one-accordion p-[20px] rounded-xl mb-[20px] bg-[#1b2335]">
+                                <div class="accordion cursor-pointer w-full flex items-center justify-between">
+                                    <button class="text-start text-[#E7E7E7]">Is Algo Fuego beginner friendly ?</button>
+                                    <img class="w-[15px] h-[8px]" src="img/arrow-down.png" alt="">
+                                </div>
+                                <div class="desc max-h-0 overflow-hidden duration-300">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="one-accordion p-[20px] rounded-xl mb-[20px] bg-[#1b2335]">
+                                <div class="accordion cursor-pointer w-full flex items-center justify-between">
+                                    <button class="text-start text-[#E7E7E7]">How can I sign up ?</button>
+                                    <img class="w-[15px] h-[8px]" src="img/arrow-down.png" alt="">
+                                </div>
+                                <div class="desc max-h-0 overflow-hidden duration-300">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="one-accordion p-[20px] rounded-xl mb-[20px] bg-[#1b2335]">
+                                <div class="accordion cursor-pointer w-full flex items-center justify-between">
+                                    <button class="text-start text-[#E7E7E7]">How does our subscription model work
+                                        ?</button>
+                                    <img class="w-[15px] h-[8px]" src="img/arrow-down.png" alt="">
+                                </div>
+                                <div class="desc max-h-0 overflow-hidden duration-300">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="one-accordion p-[20px] rounded-xl bg-[#1b2335]">
+                                <div class="accordion cursor-pointer w-full flex items-center justify-between">
+                                    <button class="text-start text-[#E7E7E7]">How can I change my subscription plan
+                                        ?</button>
+                                    <img class="w-[15px] h-[8px]" src="img/arrow-down.png" alt="">
+                                </div>
+                                <div class="desc max-h-0 overflow-hidden duration-300">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="one-accordion p-[20px] rounded-xl mb-[20px] bg-[#1b2335]">
+                                <div class="accordion cursor-pointer w-full flex items-center justify-between">
+                                    <button class="text-start text-[#E7E7E7]">How do I update my payment information
+                                        ?</button>
+                                    <img class="w-[15px] h-[8px]" src="img/arrow-down.png" alt="">
+                                </div>
+                                <div class="desc max-h-0 overflow-hidden duration-300">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="one-accordion p-[20px] rounded-xl mb-[20px] bg-[#1b2335]">
+                                <div class="accordion cursor-pointer w-full flex items-center justify-between">
+                                    <button class="text-start text-[#E7E7E7]">Can I pay with crypto ?</button>
+                                    <img class="w-[15px] h-[8px]" src="img/arrow-down.png" alt="">
+                                </div>
+                                <div class="desc max-h-0 overflow-hidden duration-300">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="one-accordion p-[20px] rounded-xl mb-[20px] bg-[#1b2335]">
+                                <div class="accordion cursor-pointer w-full flex items-center justify-between">
+                                    <button class="text-start text-[#E7E7E7]">What happens if I cancel my subscription
+                                        ?</button>
+                                    <img class="w-[15px] h-[8px]" src="img/arrow-down.png" alt="">
+                                </div>
+                                <div class="desc max-h-0 overflow-hidden duration-300">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="one-accordion p-[20px] rounded-xl mb-[20px] bg-[#1b2335]">
+                                <div class="accordion cursor-pointer w-full flex items-center justify-between">
+                                    <button class="text-start text-[#E7E7E7]">Can I get a refund ?</button>
+                                    <img class="w-[15px] h-[8px]" src="img/arrow-down.png" alt="">
+                                </div>
+                                <div class="desc max-h-0 overflow-hidden duration-300">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="one-accordion p-[20px] rounded-xl bg-[#1b2335]">
+                                <div class="accordion cursor-pointer w-full flex items-center justify-between">
+                                    <button class="text-start text-[#E7E7E7]">Is the support team available ?</button>
+                                    <img class="w-[15px] h-[8px]" src="img/arrow-down.png" alt="">
+                                </div>
+                                <div class="desc max-h-0 overflow-hidden duration-300">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <footer class="min-[1400px]:container mx-auto relative
+    
+    ">
+                    <div class="flex flex-wrap justify-between gap-x-[70px] gap-y-[42px] mt-5 mb-[32px]">
+                        <div>
+                            <div class="flex">
+                                <img class="w-[60px] h-[40px]" src="img/logo.png" alt="logo photo">
+                                <h1 class="text-[20px] font-semibold ml-2">AlgoFuego</h1>
+                            </div>
+                            <p class="mt-[20px] w-64 text-[#e7e7e7] text-[16px]">
+                                Providing advanced trading indicators and analytical tools,
+                                powered by the latest technology, to help traders make informed
+                                and confident decisions.
+                            </p>
+                        </div>
+                        <div class="">
+                            <h2 class="text-[20px] font-semibold">Quick Links</h2>
+                            <ul class="mt-[20px] text-[#e7e7e7] text-[16px]">
+                                <li class="mb-2"><a href="index.html">Home</a></li>
+                                <li class="mb-2"><a href="about.html">About Us</a></li>
+                                <li class="mb-2"><a href="library.html">Library</a></li>
+                                <li class="mb-2"><a href="fuegoAi.html">Fuego AI</a></li>
+                                <li><a href="#pricing">Pricing</a></li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <h2 class="text-[20px] font-semibold">Resourses</h2>
+                            <ul class="mt-[20px] text-[#e7e7e7] text-[16px]">
+                                <li class="mb-2"><a href="docs1.html">Docs</a></li>
+                                <li class="mb-2"><a href="blog.html">Blog</a></li>
+                                <li class="mb-2"><a href="affiliate.html">Affiliates</a></li>
+                                <li class="mb-2"><a href="affiliate.html#brandLogo">Media kit</a></li>
+                                <li><a href="policies.html">Policies Page</a></li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <h2 class="text-[20px] font-semibold">Contact Us</h2>
+                            <ul class="mt-[20px] text-[#e7e7e7] text-[16px]">
+                                <li class="flex mb-2 w-[235px]">
+                                    <img class="w-5 h-5 mr-2 mt-1" src="img/location-icon.png" alt="Location Icon">
+                                    Jordan, Amman, Seventh Circle, Shuhada Al Haram Al Ibrahimi St 4
+                                </li>
+                                <li class="flex mb-2 items-center">
+                                    <img class="w-5 h-5 mr-2 mt-1" src="img/email-icon.png" alt="Email Icon">
+                                    support@algofuego.com
+                                </li>
+                                <li class="flex mb-2 items-center">
+                                    <img class="w-5 h-5 mr-2 mt-1" src="img/call-icon.png" alt="Call Icon">
+                                    +(962) 79-123-5558
+                                </li>
+                            </ul>
+                            <div class="flex mt-4">
+                                <img class="w-12 mr-5 cursor-pointer" src="img/Twitter.png" alt="Twitter">
+                                <img class="w-12 mr-5 cursor-pointer" src="img/Instagram.png" alt="Instagram">
+                                <img class="w-12 cursor-pointer" src="img/linked.png" alt="linked">
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div
+                        class="flex gap-5 justify-between flex-wrap py-[32px] border-t border-[#F5F5F5] text-[#E7E7E7] text-[16px] font-medium">
+                        <h3>
+                            All Right Reserved | AlgoFuego
+                        </h3>
+                        <h3>&copy; 2025 — Copyright</h3>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper Library Js Link -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- script tailwind Link-->
+    <script src="js/tailwind.config.js"></script>
+    <!--  -->
+    <script src="js/main.js"></script>
+    <script>
+        let dnone = document.querySelectorAll('.dnone'); 
+        let header = document.querySelectorAll('.header');
+        let resoursePg = document.querySelectorAll('.resoursePg');
+        let closeIcon = document.querySelectorAll('.close-icon');
+        let menuIcon = document.querySelectorAll('.menu-icon');
+
+        dnone.forEach((none, index) =>{
+            none.addEventListener('click', function(){
+                header[index].style.height = 'auto';
+                resoursePg[index].style.display = 'none';
+                closeIcon[index].classList.add('hidden');
+                closeIcon[index].classList.remove('block');
+                menuIcon[index].classList.add('block');
+                menuIcon[index].classList.remove('hidden');
+            });
+        });
+
+        document.querySelectorAll(".image-container").forEach((img) => {
+            const images = img.querySelectorAll('img');
+            let currentIndex = 0;
+
+            function changeImage() {
+                // Remove the 'active' class from the current image
+                images[currentIndex].classList.remove('active');
+
+                // Update the current index (loop back to 0 if we reach the end)
+                currentIndex = (currentIndex + 1) % images.length;
+
+                // Add the 'active' class to the next image
+                images[currentIndex].classList.add('active');
+            }
+
+            // Change image every 1 second (1000 milliseconds)
+            setInterval(changeImage, 1500);
+        })
+
+
+        // ===== Start Swiper Slide =====
+
+        let swiper2 = new Swiper(".slider-wrapper2", {
+            loop: true,
+            spaceBetween: 8,
+            grabCursor: true,
+            // autoplay: {
+            //   delay: 3000,
+            // },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    var text = [
+                        "Most viewed",
+                        "Original Gann Swing Chart Rules",
+                        "Turtle Trading System",
+                        "Historical Seasonality",
+                    ];
+                    return (
+                        '<h3 class="titleh3 w-fit max-lg:w-[95%] max-lg:text-start text-[20px] cursor-pointer rounded-[20px] h-auto pt-2 pb-2 pr-6 pl-6 hover:bg-[#3b82f6] opacity-100 bg-transparent text-[#E7E7E7] ' +
+                        className +
+                        '">' +
+                        text[index] +
+                        "</h3>"
+                    );
+                },
+            },
+        });
+
+    </script>
+</body>
+
+</html>

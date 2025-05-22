@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon Link -->
+    <link rel="icon" href="img/logo.png">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Tailwind Css Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>AF | library</title>
+</head>
+
+<body class="min-[1400px]:container mx-auto bg-[#0f172a] text-[#F5F5F5] font-medium" style="zoom: 0.8;">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=El+Messiri:wght@400..700&family=Grechen+Fuemen&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        .overflowH {
+            overflow: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        a {
+            transition-duration: 0.3s;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(59 130 246);
+        }
+
+        @media (max-width:768px) {
+            #ulist {
+                box-shadow: 4px 0px 22px -19px;
+            }
+        }
+    </style>
+
+    <!-- header -->
+    <header class="header w-full sticky left-0 top-0 bg-transparent backdrop-blur-lg flex justify-between items-center z-10
+max-lg:items-start pt-6 pb-3 pl-10 lg:pl-12 pr-6 
+max-lg:pr-0
+max-lg:pl-0
+max-lg:overflow-hidden
+">
+        <!-- navBar -->
+        <nav class="w-full flex max-lg:flex-col items-center">
+            <div class="
+       max-lg:flex 
+       max-lg:justify-between 
+       max-lg:items-center 
+       max-lg:w-full
+       max-lg:pr-6
+       max-lg:pl-10
+       ">
+                <div class="mr-[32px]">
+                    <img class="w-[60px] h-[40px] cursor-pointer " src="img/logo.png" alt="logo">
+                </div>
+                <button
+                    class="close-icon border-[#394259] hidden p-2 text-white hover:text-slate-400 active:text-slate-600 transition-colors border rounded-lg bg-slate-950/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                        data-slot="icon" class="w-6 h-6">
+                        <path fill-rule="evenodd"
+                            d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                            clip-rule="evenodd">
+                        </path>
+                    </svg>
+                </button>
+                <div class="menu-icon block lg:hidden">
+                    <button
+                        class="p-2 text-white border-[#394259] hover:text-slate-400 active:text-slate-600 transition-colors border rounded-lg bg-slate-950/20"><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            aria-hidden="true" data-slot="icon" class="w-6 h-6">
+                            <path fill-rule="evenodd"
+                                d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75H12a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                                clip-rule="evenodd">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="menu" class="nav-links max-lg:bg-[#0f172a] flex justify-between items-center w-full
+       max-lg:hidden
+       max-lg:absolute
+       max-lg:top-[80px]
+       max-lg:bg-transparent
+       max-lg:flex-col
+       max-lg:items-start
+       max-lg:pr-6
+       max-lg:pl-10
+       max-lg:mt-8
+       ">
+
+       <ul id="" class="flex gap-[48px] text-[20px] relative z-20 text-[#e7e7e7]
+       max-lg:flex-col
+       max-lg:gap-2
+       max-lg:w-full
+       max-lg:text-[16px]
+           ">
+               <!-- <span id="close-btn"
+               class="absolute top-3 right-3 cursor-pointer text-xl hidden max-lg:block">X</span> -->
+               <a href="index.html" class="
+           max-lg:w-full
+           max-lg:bg-transparent
+           max-lg:border-[#FFFFFF33]
+           max-lg:border-2
+           max-lg:rounded-lg
+           max-lg:p-3  
+           duration-300">
+                   <li class="hover:text-[#80899f]">Home</li>
+               </a>
+               <a href="library.html" class="
+                max-lg:w-full
+           max-lg:bg-transparent
+           max-lg:border-[#FFFFFF33]
+           max-lg:border-2
+           max-lg:rounded-lg
+           max-lg:p-3  
+           duration-300">
+                   <li class="hover:text-[#80899f]">Library</li>
+               </a>
+               <a href="fuegoAi.html" class="
+                max-lg:w-full
+           max-lg:bg-transparent
+           max-lg:border-[#FFFFFF33]
+           max-lg:border-2
+           max-lg:rounded-lg
+           max-lg:p-3  
+           duration-300">
+                   <li class="hover:text-[#80899f]">FuegoAI</li>
+               </a>
+
+               <li class=" dropdown-button relative
+                max-lg:w-full
+                max-lg:bg-transparent
+                max-lg:border-[#FFFFFF33]
+                max-lg:border-2
+                max-lg:rounded-lg
+                max-lg:p-3  
+                
+                duration-300">
+                   <a id="resButton"
+                       class="dropdownBtn cursor-context-menu max-lg:cursor-pointer flex items-center max-lg:mt-[0px] max-lg:justify-between">
+                       Resources
+                       <img class="w-[9px] ml-2" src="img/arrow.png" alt="">
+                   </a>
+
+                   <div class="dropdown-menu
+                    absolute top-full left-0 origin-top-left
+                    invisible group-hover/dropdown:visible opacity-0 group-hover/dropdown:opacity-100 scale-95 group-hover/dropdown:scale-100 transition-all ease-in duration-100
+                    pt-1
+                  ">
+                       <div
+                           class="border border-slate-600  p-2 space-y-2 rounded-xl bg-slate-900/90  light:bg-slate-200/90 min-w-40">
+                           <a href="docs1.html" target="_blank"
+                               class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                               <div class="p-3 leading-4 space-y-1">
+                                   <div>Docs</div>
+                                   <div class="text-xs">Learn our products with AI search</div>
+                               </div>
+                           </a>
+                           <a href="blog.html" target="_blank"
+                               class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                               <div class="p-3 leading-4 space-y-1">
+                                   <div>Blog</div>
+                                   <div class="text-xs">Learn trading, markets, and our tools</div>
+                               </div>
+                           </a>
+                           <a href="affiliate.html"
+                               class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                               <div class="p-3 leading-4 space-y-1">
+                                   <div>Affiliates</div>
+                                   <div class="text-xs">Build an income sharing our tools</div>
+                               </div>
+                           </a>
+                           <a href="affiliate.html#brandLogo"
+                               class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                               <div class="p-3 leading-4 space-y-1">
+                                   <div>Media Kit</div>
+                                   <!-- <div class="text-xs">What is LuxAlgo?</div> -->
+                               </div>
+                           </a>
+                           <a href="policies.html" target="_blank"
+                               class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                               <div class="p-3 leading-4 space-y-1">
+                                   <div>Policies Page</div>
+                                   <!-- <div class="text-xs">Home of the smartest traders globally</div> -->
+                               </div>
+                           </a>
+
+                       </div>
+                   </div>
+
+               </li>
+               <a href="index.html#pricing" class="
+                max-lg:w-full
+           max-lg:bg-transparent
+           max-lg:border-[#FFFFFF33]
+           max-lg:border-2
+           max-lg:rounded-lg
+           max-lg:p-3  
+           duration-300">
+                   <li class="hover:text-[#80899f]">Pricing</li>
+               </a>
+               <hr class="bg-[#FFFFFF33] w-full mb-2 hidden max-lg:block">
+           </ul>
+                <!-- button sign in -->
+                <button class="px-5 py-1.5 rounded-[100px] backdrop-blur-xl text-[16px] font-medium
+           relative z-10
+                max-lg:w-full
+                bg-[#3b82f6] 
+                border-[#3b82f6]
+                text-[#e7e7e7]
+                hover:bg-[#3b82f6b3]
+                hover:border-[#3b82f6b3]
+                border-2 duration-300">
+                    <a href="signup.html">Sign Up</a>
+                </button>
+            </div>
+
+            <!-- ===== Start Resourse PAge In Mobile ( < 1020) ===== -->
+            <div class="resoursePg max-lg:mt-8 w-full hidden top-[80px] pr-6 pl-10 max-lg:text-[16px]">
+                <div class="space-y-2">
+                    <div class="flex justify-between items-baseline gap-2">RESOURCES
+                        <button
+                            class="backBtn py-3 flex gap-1 leading-4 text-white hover:text-slate-400 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                aria-hidden="true" data-slot="icon" class="size-4">
+                                <path fill-rule="evenodd"
+                                    d="M9.78 4.22a.75.75 0 0 1 0 1.06L7.06 8l2.72 2.72a.75.75 0 1 1-1.06 1.06L5.47 8.53a.75.75 0 0 1 0-1.06l3.25-3.25a.75.75 0 0 1 1.06 0Z"
+                                    clip-rule="evenodd">
+                                </path>
+                            </svg>
+                            BACK
+                        </button>
+                    </div>
+                    <div>
+                        <div class="space-y-2">
+                            <a href="docs1.html"
+                                class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                                <div class="p-3 leading-4 space-y-1">
+                                    <div>Docs</div>
+                                    <div class="text-xs">Learn our products with AI search</div>
+                                </div>
+                            </a>
+                            <a href="blog.html"
+                                class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                                <div class="p-3 leading-4 space-y-1">
+                                    <div>Blog</div>
+                                    <div class="text-xs">Learn trading, markets, and our tools</div>
+                                </div>
+                            </a>
+                            <a href="affiliate.html"
+                                class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                                <div class="p-3 leading-4 space-y-1">
+                                    <div>Affiliates</div>
+                                    <div class="text-xs">Build an income sharing our tools</div>
+                                </div>
+                            </a>
+                            <a href="affiliate.html#brandLogo"
+                                class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                                <div class="p-3 leading-4 space-y-1">
+                                    <div>Media Kit</div>
+                                    <!-- <div class="text-xs">What is LuxAlgo?</div> -->
+                                </div>
+                            </a>
+                            <a href="policies.html"
+                                class="group/item flex items-center rounded-lg bg-translate  light:bg-slate-50 border border-slate-600  whitespace-nowrap my-auto text-slate-400  light:text-slate-600 hover:text-slate-100 light:hover:text-slate-900">
+                                <div class="p-3 leading-4 space-y-1">
+                                    <div>Policies Page</div>
+                                    <!-- <div class="text-xs">Home of the smartest traders globally</div> -->
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ===== End Resourse PAge In Mobile ( < 1020) =====  -->
+        </nav>
+
+    </header>
+    <div class="mx-auto">
+        <div class="px-10">
+            <div class="min-[1400px]:container mx-auto">
+                <!--  -->
+                <div class="section w-full my-[80px] flex gap-[133px] justify-between items-center max-lg:flex-wrap">
+
+                    <div class="flex flex-col max-md:w-full">
+                        <h2 class="text-[48px] font-semibold max-sm:text-4xl">
+                            Indicators & Strategies For Tradingview Traders
+                        </h2>
+                        <p
+                            class="max-md:mt-2 max-md:mb-8 mb-[48px] mt-5 text-[20px] font-medium text-[#E7E7E7] leading-[28px]">
+                            50+ premium indicators, Tutorials, mentorship and more - All-in-one toolbox
+                        </p>
+                        <div class="flex">
+                            <button class="relative pt-2 pb-2 pr-5 pl-5 rounded-3xl hover:scale-x-105 duration-300 bg-[#3b82f6]
+                    text-[#E7E7E7]
+                    ">
+                                <a href="index.html#pricing">
+                                    Try 30 Days Free
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-[565px] h-[349px] min-[1400px]:w-full max-[1400px]:w-full max-lg:w-full max-lg:h-auto">
+                        <img id="slideImage" class="rounded-[20px] w-[565px] h-[349px]
+                        opacity-100 transition-opacity duration-1000 ease-in-out max-[1400px]:w-full min-[1400px]:w-full max-lg:w-full max-lg:h-auto
+                        " src="img/original-gann.webp" alt="original Gann">
+                    </div>
+                </div>
+
+                <!-- hr -->
+                <div class="section flex justify-between items-center">
+                    <h3 class="w-[360px] max-lg:w-[500px] text-[16px] text-[#FFFFFF] leading-[100%] tracking-[-4%]">Bold
+                        Visions. Precise
+                        Execution</h3>
+                    <hr class="text-[#FFFFFF] w-full max-sm:w-[370px] max-[500px]:w-[300px] max-[460px]:w-[130px]">
+                </div>
+
+                <!--  -->
+
+                <div class="section w-full flex gap-[20px] justify-center my-[150px] 
+                    max-md:justify-start
+                    max-md:flex-wrap-reverse
+                    max-[3000px]:h-screen
+                    max-md:h-auto
+                    min-[3000px]:h-[50vh]
+                    max-md:w-auto
+                    ">
+                    <!-- Cards -->
+                    <div id="scrollcard" class="w-full pr-[100px] overflow-y-scroll  
+                        max-md:px-0 
+                        max-md:pr-0
+                        max-md:py-6
+                        max-[3000px]:h-screen
+                        max-md:h-auto
+                        min-[3000px]:h-[50vh]
+                           ">
+                        <div class="flex gap-[20px] justify-between items-stretch flex-wrap w-full">
+                            <!-- one card -->
+                            <div class="w-[560px] min-[1469px]:w-[48%] max-lg:w-full max-[1300px]:w-[480px] p-4 rounded-[20px] border border-[#FFFFFF33]">
+                                <img class="w-full h-[200px]" src="img/New Microsoft PowerPoint Presentation.png"
+                                    alt="new microsoft">
+                                <div class="mt-5">
+                                    <div class="mb-5 flex gap-[10px]">
+                                        <button
+                                            class="px-2 py-1 rounded-[50px] text-[#E7E7E7] bg-[#1b2335] text-[16px]">Price
+                                            Action</button>
+                                        <button
+                                            class="px-2 py-1 rounded-[50px] text-[#E7E7E7] bg-[#1b2335] text-[16px]">Trend</button>
+                                    </div>
+                                    <div class="flex items-end justify-between">
+                                        <div>
+                                            <h3 class="text-[#F5F5F5] mb-2">Original Gann Swing Chart Rules</h3>
+                                            <p class="text-[16px] text-[#B5B5BE] font-normal leading-[22px]">Real-time
+                                                market
+                                                direction analysis to enhance your trading decisions.
+                                                
+                                                </p>
+                                        </div>
+                                        <img class="w-4 h-[10.6px] cursor-pointer" src="img/ReadMoreButton.png"
+                                            alt="arrow read more">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- two card -->
+                            <div
+                                class="w-[560px] min-[1469px]:w-[48%] max-lg:w-full max-[1300px]:w-[480px] p-4 rounded-[20px] border border-[#FFFFFF33]">
+                                <img class="w-full h-[200px]" src="img/New Microsoft PowerPoint Presentation.png"
+                                    alt="new microsoft">
+                                <div class="mt-5">
+                                    <div class="mb-5 flex gap-[10px]">
+                                        <button
+                                            class="px-2 py-1 rounded-[50px] text-[#E7E7E7] bg-[#1b2335] text-[16px]">Price
+                                            Action</button>
+                                        <button
+                                            class="px-2 py-1 rounded-[50px] text-[#E7E7E7] bg-[#1b2335] text-[16px]">Trend</button>
+                                    </div>
+                                    <div class="flex items-end max-md:justify-between">
+                                        <div>
+                                            <h3 class="text-[#F5F5F5] mb-2">Original Gann Swing Chart Rules</h3>
+                                            <p class="text-[16px] text-[#B5B5BE] font-normal leading-[22px]">Real-time
+                                                market
+                                                direction analysis to enhance your trading decisions.</p>
+                                        </div>
+                                        <img class="w-4 h-[10.6px] cursor-pointer" src="img/ReadMoreButton.png"
+                                            alt="arrow read more">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- two card -->
+                            <div
+                                class="w-[560px] min-[1469px]:w-[48%] max-lg:w-full max-[1300px]:w-[480px] p-4 rounded-[20px] border border-[#FFFFFF33]">
+                                <img class="w-full h-[200px]" src="img/New Microsoft PowerPoint Presentation.png"
+                                    alt="new microsoft">
+                                <div class="mt-5">
+                                    <div class="mb-5 flex gap-[10px]">
+                                        <button
+                                            class="px-2 py-1 rounded-[50px] text-[#E7E7E7] bg-[#1b2335] text-[16px]">Price
+                                            Action</button>
+                                        <button
+                                            class="px-2 py-1 rounded-[50px] text-[#E7E7E7] bg-[#1b2335] text-[16px]">Trend</button>
+                                    </div>
+                                    <div class="flex items-end max-md:justify-between">
+                                        <div>
+                                            <h3 class="text-[#F5F5F5] mb-2">Original Gann Swing Chart Rules</h3>
+                                            <p class="text-[16px] text-[#B5B5BE] font-normal leading-[22px]">Real-time
+                                                market
+                                                direction analysis to enhance your trading decisions.</p>
+                                        </div>
+                                        <img class="w-4 h-[10.6px] cursor-pointer" src="img/ReadMoreButton.png"
+                                            alt="arrow read more">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- right page -->
+
+                    <div class="w-[400px] relative lg:text-sm lg:leading-6 h-screen max-md:h-auto overflow-y-scroll pr-5
+                    ">
+
+                        <!-- button -->
+                        <div class="w-full bg-[#3B82F6] rounded-[20px] p-4 text-[#E7E7E7]">
+                            <a href="index.html#pricing">
+                                <h4 class="text-[16px] mb-3">Start Your Advanced Trading Journey Now!</h4>
+                            <button class="w-full flex justify-between items-center flex-wrap text-[16px]">
+                                Try 30 Days Free
+                                <img class="w-[16px] h-[10.6px]" src="img/ReadMoreButton.png" alt="arrow right">
+                            </button>
+                            </a>
+                        </div>
+                        <form class="w-full relative my-[48px]" action="">
+                            <input
+                                class="w-full bg-transparent text-[16px] outline-none text-[#E7E7E7] pr-[30px] pl-[48px] py-[12px] rounded-[50px] border-[#FFFFFF33] border"
+                                type="search" placeholder="Search">
+                            <img class="w-[24px] h-[24.5px] absolute top-[13px] left-[13px]" src="img/search.png"
+                                alt="search icon">
+                        </form>
+                        <div class="w-full">
+                            <h3 class="text-[#E7E7E7] text-[24px] font-semibold mb-[32px]">Categories</h3>
+                            <div class="w-full flex flex-col gap-[20px]">
+                                <div class="flex items-center cursor-pointer">
+                                    <img class="w-[24px] mr-[8px]" src="img/Document.png" alt="Document icon">
+                                    <h3 class="text-[20px] leading-[28px] tracking-[-1%] text-[#B8B8B8]">AI &
+                                        Technology
+                                    </h3>
+                                </div>
+                                <div class="flex items-center cursor-pointer">
+                                    <img class="w-[24px] mr-[8px]" src="img/Document.png" alt="Document icon">
+                                    <h3 class="text-[20px] leading-[28px] tracking-[-1%] text-[#B8B8B8]">Product
+                                        Updates
+                                    </h3>
+                                </div>
+                                <div class="flex items-center cursor-pointer">
+                                    <img class="w-[24px] mr-[8px]" src="img/Document.png" alt="Document icon">
+                                    <h3 class="text-[20px] leading-[28px] tracking-[-1%] text-[#B8B8B8]">Trading
+                                        Strategies &
+                                        Tips</h3>
+                                </div>
+                                <div class="flex items-center cursor-pointer">
+                                    <img class="w-[24px] mr-[8px]" src="img/Document.png" alt="Document icon">
+                                    <h3 class="text-[20px] leading-[28px] tracking-[-1%] text-[#B8B8B8]">
+                                        Technical
+                                        Analysis</h3>
+                                </div>
+                                <div class="flex items-center cursor-pointer">
+                                    <img class="w-[24px] mr-[8px]" src="img/Document.png" alt="Document icon">
+                                    <h3 class="text-[20px] leading-[28px] tracking-[-1%] text-[#B8B8B8]">Price
+                                        Action
+                                    </h3>
+                                </div>
+                                <div class="flex items-center cursor-pointer">
+                                    <img class="w-[24px] mr-[8px]" src="img/Document.png" alt="Document icon">
+                                    <h3 class="text-[20px] leading-[28px] tracking-[-1%] text-[#B8B8B8]">Trend
+                                    </h3>
+                                </div>
+                                <div class="flex items-center cursor-pointer">
+                                    <img class="w-[24px] mr-[8px]" src="img/Document.png" alt="Document icon">
+                                    <h3 class="text-[20px] leading-[28px] tracking-[-1%] text-[#B8B8B8]">Support
+                                        and
+                                        Resistance
+                                    </h3>
+                                </div>
+                                <div class="flex items-center cursor-pointer">
+                                    <img class="w-[24px] mr-[8px]" src="img/Document.png" alt="Document icon">
+                                    <h3 class="text-[20px] leading-[28px] tracking-[-1%] text-[#B8B8B8]">Volume
+                                    </h3>
+                                </div>
+                                <div class="flex items-center cursor-pointer">
+                                    <img class="w-[24px] mr-[8px]" src="img/Document.png" alt="Document icon">
+                                    <h3 class="text-[20px] leading-[28px] tracking-[-1%] text-[#B8B8B8]">
+                                        Volatility</h3>
+                                </div>
+                                <div class="flex items-center cursor-pointer">
+                                    <img class="w-[24px] mr-[8px]" src="img/Document.png" alt="Document icon">
+                                    <h3 class="text-[20px] leading-[28px] tracking-[-1%] text-[#B8B8B8]">
+                                        Momentum</h3>
+                                </div>
+                                <div class="flex items-center cursor-pointer">
+                                    <img class="w-[24px] mr-[8px]" src="img/Document.png" alt="Document icon">
+                                    <h3 class="text-[20px] leading-[28px] tracking-[-1%] text-[#B8B8B8]">
+                                        Oscillators
+                                    </h3>
+                                </div>
+                                <div class="flex items-center cursor-pointer">
+                                    <img class="w-[24px] mr-[8px]" src="img/Document.png" alt="Document icon">
+                                    <h3 class="text-[20px] leading-[28px] tracking-[-1%] text-[#B8B8B8]">Signals
+                                    </h3>
+                                </div>
+                                <div class="flex items-center cursor-pointer">
+                                    <img class="w-[24px] mr-[8px]" src="img/Document.png" alt="Document icon">
+                                    <h3 class="text-[20px] leading-[28px] tracking-[-1%] text-[#B8B8B8]">Time
+                                    </h3>
+                                </div>
+                                <div class="flex items-center cursor-pointer">
+                                    <img class="w-[24px] mr-[8px]" src="img/Document.png" alt="Document icon">
+                                    <h3 class="text-[20px] leading-[28px] tracking-[-1%] text-[#B8B8B8]">
+                                        Correlation
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+               <!-- Footer -->
+               <footer class="min-[1400px]:container mx-auto relative
+    
+               ">
+                               <div class="flex flex-wrap justify-between gap-x-[70px] gap-y-[42px] mt-5 mb-[32px]">
+                                   <div>
+                                       <div class="flex">
+                                           <img class="w-[60px] h-[40px]" src="img/logo.png" alt="logo photo">
+                                           <h1 class="text-[20px] font-semibold ml-2">AlgoFuego</h1>
+                                       </div>
+                                       <p class="mt-[20px] w-64 text-[#e7e7e7] text-[16px]">
+                                           Providing advanced trading indicators and analytical tools,
+                                           powered by the latest technology, to help traders make informed
+                                           and confident decisions.
+                                       </p>
+                                   </div>
+                                   <div class="">
+                                       <h2 class="text-[20px] font-semibold">Quick Links</h2>
+                                       <ul class="mt-[20px] text-[#e7e7e7] text-[16px]">
+                                           <li class="mb-2"><a href="index.html">Home</a></li>
+                                           <li class="mb-2"><a href="about.html">About Us</a></li>
+                                           <li class="mb-2"><a href="library.html">Library</a></li>
+                                           <li class="mb-2"><a href="fuegoAi.html">Fuego AI</a></li>
+                                           <li><a href="index.html#pricing">Pricing</a></li>
+                                       </ul>
+                                   </div>
+                                   <div class="">
+                                       <h2 class="text-[20px] font-semibold">Resourses</h2>
+                                       <ul class="mt-[20px] text-[#e7e7e7] text-[16px]">
+                                           <li class="mb-2"><a href="docs1.html">Docs</a></li>
+                                           <li class="mb-2"><a href="blog.html">Blog</a></li>
+                                           <li class="mb-2"><a href="affiliate.html">Affiliates</a></li>
+                                           <li class="mb-2"><a href="affiliate.html#brandLogo">Media kit</a></li>
+                                           <li><a href="policies.html">Policies Page</a></li>
+                                       </ul>
+                                   </div>
+                                   <div class="">
+                                       <h2 class="text-[20px] font-semibold">Contact Us</h2>
+                                       <ul class="mt-[20px] text-[#e7e7e7] text-[16px]">
+                                           <li class="flex mb-2 w-[235px]">
+                                               <img class="w-5 h-5 mr-2 mt-1" src="img/location-icon.png" alt="Location Icon">
+                                               Jordan, Amman, Seventh Circle, Shuhada Al Haram Al Ibrahimi St 4
+                                           </li>
+                                           <li class="flex mb-2 items-center">
+                                               <img class="w-5 h-5 mr-2 mt-1" src="img/email-icon.png" alt="Email Icon">
+                                               support@algofuego.com
+                                           </li>
+                                           <li class="flex mb-2 items-center">
+                                               <img class="w-5 h-5 mr-2 mt-1" src="img/call-icon.png" alt="Call Icon">
+                                               +(962) 79-123-5558
+                                           </li>
+                                       </ul>
+                                       <div class="flex mt-4">
+                                           <img class="w-12 mr-5 cursor-pointer" src="img/Twitter.png" alt="Twitter">
+                                           <img class="w-12 mr-5 cursor-pointer" src="img/Instagram.png" alt="Instagram">
+                                           <img class="w-12 cursor-pointer" src="img/linked.png" alt="linked">
+                                       </div>
+                                   </div>
+                               </div>
+                               <!--  -->
+                               <div
+                                   class="flex gap-5 justify-between flex-wrap py-[32px] border-t border-[#F5F5F5] text-[#E7E7E7] text-[16px] font-medium">
+                                   <h3>
+                                       All Right Reserved | AlgoFuego
+                                   </h3>
+                                   <h3>&copy; 2025 — Copyright</h3>
+                               </div>
+                           </footer>
+
+            </div>
+        </div>
+    </div>
+    <!-- script Link -->
+
+    <!-- Swiper Library Js Link -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- script tailwind Link-->
+    <script src="js/tailwind.config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
